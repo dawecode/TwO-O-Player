@@ -6,7 +6,7 @@ class Question
     @answer = @var1 + @var2
   end
   def output
-      "What is #{@var1} + #{@var2}?"
+     puts "What is #{@var1} + #{@var2}?"
     end
   def correct_answer(input)
     input == @answer
@@ -14,7 +14,7 @@ class Question
 end
 
 
-question1 = Question.new
-question2 = Question.new
-puts question2.output
-puts question2.correct_answer(4)
+# question1 = Question.new
+# question2 = Question.new
+# puts question2.output
+# puts question2.correct_answer(4)
