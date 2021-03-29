@@ -1,11 +1,30 @@
+require './question'
+require './player'
+
 class Game 
-question 
 
-# start with player 1 
+ def initialize
+  @player1 = Player.new(1)
+  @player2 = Player.new(2)
+  @current_player = @player1
+ end 
 
-  #new turn 
-def turn 
+  def switch_player
+    if @current_player == @player1  
+       @current_player = @player2
+    else 
+      @current_player == @player2 
+    end
 
-method Question 
-  def question (numb1,numb2)
+    def plays_game 
+      puts "Let's start"
+      while @current_player.lives > 0 do 
+        puts "---NEW TURN---"
+        @game_question = Question.new
+        @game_question.output
+      end 
+    end
 end 
+
+
+

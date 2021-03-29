@@ -1,9 +1,16 @@
+
+
+
+require './game'
+require './player'
+require './question'
+
 #super class player unless players have different behaviors 
 
 
-player1 = Player.new(1)
-player2 = Player.new(2)
-puts player1.lives
+# player1 = Player.new(1)
+# player2 = Player.new(2)
+# puts player1.lives
 
 #  def answers? 
 #   if answer == answer
